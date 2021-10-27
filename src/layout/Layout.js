@@ -1,12 +1,29 @@
 import './Layout.css';
 
 function Layout() {
-  const foo = {};
+    const foo = {
+        border: '1px solid black',
+        boxShadow: '5px 5px 5px black',
+        borderRadius: '15px',
+        padding: '1rem'
+    };
+
+    const title = {
+        color: 'red',
+        textTransform: 'uppercase'
+    };
+
+    const paragraph = {
+        color: 'brown',
+        marginBottom: '1rem'
+    };
+    
+
   return (
     <div className="layout">
       <div style={foo}>
-        <h3>Lorem Ipsum</h3>
-        <p>
+        <h3 style={title}>Lorem Ipsum</h3>
+        <p style={paragraph}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam odio
           nibh, viverra ac est vel, luctus accumsan diam. Aliquam erat volutpat.
           Integer congue, risus auctor consectetur pretium, nulla diam dictum
@@ -19,7 +36,7 @@ function Layout() {
           magna congue, pellentesque eros vitae, fermentum mi. Sed ultrices
           turpis vehicula nisi mollis, quis imperdiet lectus rutrum.
         </p>
-        <p>
+        <p style={paragraph}>
           Etiam fermentum lacus vel leo pharetra, quis facilisis dolor sagittis.
           Donec ac mi tristique, lacinia quam vel, mollis libero. Donec in
           efficitur tellus. Nulla eu metus eget dolor posuere venenatis. In non
